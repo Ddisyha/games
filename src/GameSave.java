@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class GameProgress implements Serializable {
+public class GameSave implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private int health;
@@ -8,7 +8,7 @@ public class GameProgress implements Serializable {
     private int lvl;
     private double distance;
 
-    public GameProgress(int health, int weapons, int lvl, double distance) {
+    public GameSave(int health, int weapons, int lvl, double distance) {
         this.health = health;
         this.weapons = weapons;
         this.lvl = lvl;
@@ -17,7 +17,7 @@ public class GameProgress implements Serializable {
 
     @Override
     public String toString() {
-        return "GameProgress{" +
+        return "GameSave{" +
                 "health=" + health +
                 ", weapons=" + weapons +
                 ", lvl=" + lvl +
